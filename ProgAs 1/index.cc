@@ -3,6 +3,8 @@
 #include <sstream>
 #include <string>       // provides string class
 #include <cctype>       // provides isalpha() and tolower()
+#include <cmath>
+
 #include "CIndex.h"
 
 using namespace std;
@@ -81,4 +83,6 @@ int main(int argc, char *argv[]) {
     }
   }
   index.printInOrder();
+
+  return 0;
 }

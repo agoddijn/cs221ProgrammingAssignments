@@ -82,4 +82,5 @@ int main(int argc, char *argv[]) {
     }
   }
   index.printInOrder();
+  return 0;
 }

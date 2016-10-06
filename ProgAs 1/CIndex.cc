@@ -6,11 +6,11 @@ Date - Oct 3rd 2016
 
 #include "CIndex.h"
 #include <iostream>
-#include <string>
-#include <vector>
 
 //Constructor
-CIndex::CIndex(){}
+CIndex::CIndex(){
+    std::vector<Word*> wordList;
+}
 
 //Binary search algorithm of vector
 Word* CIndex::find(std::string toFind){
@@ -29,6 +29,7 @@ Word* CIndex::find(std::string toFind){
             l = m + 1;
         }
     }
+
     return NULL;
 }
 
