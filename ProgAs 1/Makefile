@@ -6,7 +6,7 @@ all : index
 # add any new .o files to the list
 # build it using g++
 index : index.o CIndex.o Word.o
-	g++ index.o CIndex.o Word.o -o index
+	g++ -std=c++11 index.o CIndex.o Word.o -o index
 
 # index.o is dependant on one .cc file and no .h files
 # IMPORTANT: when you #include a new .h file, be sure to add it here.
@@ -18,15 +18,15 @@ index : index.o CIndex.o Word.o
 # -g: put in debug information, for those of you who are using
 # debuggers (like gdb or ddd or xxgdb)
 index.o : index.cc CIndex.h
-	g++ -Wall -c -g index.cc -o index.o
+	g++ -std=c++11 -Wall -c index.cc -o index.o
 
 # and same idea for other .o files ...
 
 CIndex.o : CIndex.cc CIndex.h Word.h
-	g++ -Wall -c CIndex.cc -o CIndex.o
+	g++ -std=c++11 -Wall -c CIndex.cc -o CIndex.o
 
 Word.o : Word.cc Word.h
-	g++ -Wall -c Word.cc -o Word.o
+	g++ -std=c++11 -Wall -c Word.cc -o Word.o
 
 # 'clean' removes any files that were created via the Makefile,
 # leaving you with only your original source code files

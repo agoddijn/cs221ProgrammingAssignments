@@ -18,8 +18,6 @@ public:
     void insert(std::string word, int pageNum); //Insert word into structure
     Word* find(std::string word); //Returns a Word corresponding to the given word
     void printInOrder();
-    int getSize();
-    std::string getWordAt(int i);
 
 private:
     std::vector<Word*> wordList;
