@@ -5,28 +5,9 @@
 #include <cctype>       // provides isalpha() and tolower()
 #include <cmath>
 
-#include "CIndex.h"
+#include "skiplist.h"
 
 using namespace std;
-
-// The following function should be moved into your skiplist.cc file when you
-// write that.  It implements the random bit generation.
-#include <ctime>                // for time()
-#include <cstdlib>              // for rand(), srand(), and RAND_MAX
-
-int randBit(void) {             // return a "random" bit
-  static int bitsUpperBd=0;
-  static int bits;              // store bits returned by rand()
-  if( bitsUpperBd == 0 ) {      // refresh store when empty
-    bitsUpperBd = RAND_MAX;
-    bits = rand();
-  }
-  int b = bits & 1;
-  bits >>= 1;
-  bitsUpperBd >>= 1;
-  return b;
-}
-
 
 // Remove all characters except letters (A-Z,a-z) from line,
 // except keep '-' or '\'' if they are between letters.
@@ -68,7 +49,12 @@ int main(int argc, char *argv[]) {
     exit(3);
   }
 
-  CIndex index;
+  //DEBUG
+
+  //END DEBUG
+
+  //CIndex index;
+  skiplist index;
 
   string line, word;
   int lineNum = 0;

@@ -1,0 +1,21 @@
+Name: Alexander Goddijn
+Time for completion: 1/2 working day
+Assistance: N/A
+Files:
+  Word.h - Header file for Word data type
+  Word.cc - Class file for Word, including methods;
+    addToPages - adds given page to Word
+    isPageInList - searches pages associated to Word
+    incOccurence - Increases occurence associated to word
+  wordNode.h - Header file for wordNode data type
+  wordNode.cc -Class file for wordNode, including methods;
+    randBit - given in assignment, creates random bit
+    genHeight - generates a random height value (with some distribution)
+    setArray - sets all elements of a given array to NULL
+  skiplist.h - Header file for CIndex class
+  skiplist.cc - Class file for CIndex, including methods;
+    find - Required binary search function
+    insert - Required insert function
+    printInOrder - Required print in order function
+    formatPages - Produces formatted string of pagelist for given Word
+  index.cc - Class file including main() method

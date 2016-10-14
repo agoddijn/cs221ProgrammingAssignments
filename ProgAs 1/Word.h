@@ -11,10 +11,10 @@ Date - Oct 3rd 2016
 #include <vector>
 
 struct Word {
-    std::string word;
-    int occurence;
-    std::vector<int> listOfPages;
-    Word(std::string wordInit): word(wordInit), occurence(0){};
+  std::string word;
+  int occurence;
+  std::vector<int> listOfPages;
+  Word(std::string wordInit): word(wordInit), occurence(0){};
 };
 
 //Function declarations
