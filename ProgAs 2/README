@@ -1,0 +1,17 @@
+Name: Alex Goddijn
+Student Number: 47917133
+Asistance: N/A
+Files:
+  huftree.cc - Given in assignment
+  codeTree.h - Header file for codeTree data type
+  codeTree.cc - Includes all neccesary implementations for codeTree data type
+  myQueue.h - Header file for priority queue implementation
+  myQueue.cc - Priority queue implementation using underlying minheap data structure stored in vector
+  node.h - Node data type, for creating codeTree
+  moveover.txt - Given in assignment
+  REAMDE - This file
+  Makefile - necessary for creating executable of huftree
+
+Instructions:
+  None, but you can try the printTree function for a bunch of different (and longer) texts, took a while to figure out but it looks really nice.
+
